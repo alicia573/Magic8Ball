@@ -22,12 +22,14 @@ This project simulates a magic 8-ball using a Raspberry Pi with a SenseHat. The 
 
 1. Ensure that you have a Raspberry Pi with a SenseHat attached.
 2. Install the required Python libraries:
+   `pip install pygame pymysql gtts sense-hat`
+
 
 
 3. Set up your MySQL database with a table named `answer` containing the columns `message` and `emoji`.
 4. Ensure that the Python scripts for displaying emojis are located in the `emojis/` directory.
 5. Run the main Python script:
-
+  `python3 <script_name>.py`
 
 ## Usage:
 
