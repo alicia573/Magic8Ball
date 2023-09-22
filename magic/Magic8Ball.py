@@ -19,7 +19,7 @@ def play_sound_effect(file_path):
     pygame.mixer.music.play()
     
 def get_message_and_emoji_from_db():
-    conn = pymysql.connect(host='localhost', user='root', password='root5730', database='magic8ball')
+    conn = pymysql.connect(host='localhost', user='root', password='', database='magic8ball')
     cursor = conn.cursor()
     
     cursor.execute("SELECT message, emoji FROM answer ORDER BY RAND() LIMIT 1")
